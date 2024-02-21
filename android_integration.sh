@@ -6,7 +6,7 @@ pushd android
     #./gradlew app:connectedDebugAndroidTest -Ptarget=integration_test/tests/create_todo_test.dart   #- To Run Test On Local For Verification
 popd
 
-gcloud auth activate-service-account --key-file=prism-dev-030122-75e34e02152f.json
+gcloud auth activate-service-account --key-file=<Path to your file>
 gcloud --quiet config set project prism-dev-030122
 
 gcloud firebase test android run --type instrumentation \
